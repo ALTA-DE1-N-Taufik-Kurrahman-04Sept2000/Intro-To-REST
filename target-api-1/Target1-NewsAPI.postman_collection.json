@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "e0ea58e8-268a-4546-a6a8-e2a4efef7af0",
+		"name": "Target1-NewsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30325798"
+	},
+	"item": [
+		{
+			"name": "TopHeadlines dari Indonesia dan diurutkan secara Popularity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=Id&sortBy=popularity&apiKey=887693dfcd6649c2b9d5d71b80fcf023",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Id"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "887693dfcd6649c2b9d5d71b80fcf023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Artikel sejak Bulan Lalu dengan Judul terkait Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?qInTitle=Data&from=2023-09-07&apiKey=887693dfcd6649c2b9d5d71b80fcf023",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "qInTitle",
+							"value": "Data"
+						},
+						{
+							"key": "from",
+							"value": "2023-09-07"
+						},
+						{
+							"key": "apiKey",
+							"value": "887693dfcd6649c2b9d5d71b80fcf023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Artikel terkait Programming dan diurutkan terbaru",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Programming&sortBy=publishedAt&apiKey=887693dfcd6649c2b9d5d71b80fcf023",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Programming"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "887693dfcd6649c2b9d5d71b80fcf023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopHeadlines US dengan kategori Teknologi dan diurutkan Popularity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&category=technology&sortBy=popularity&apiKey=887693dfcd6649c2b9d5d71b80fcf023",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "category",
+							"value": "technology"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "887693dfcd6649c2b9d5d71b80fcf023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Artikel yang menyebutkan Data Engineer lalu diurutkan secara Relevancy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=\"Data Engineer\"&SortedBy=relevancy&apiKey=887693dfcd6649c2b9d5d71b80fcf023",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "\"Data Engineer\""
+						},
+						{
+							"key": "SortedBy",
+							"value": "relevancy"
+						},
+						{
+							"key": "apiKey",
+							"value": "887693dfcd6649c2b9d5d71b80fcf023"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
